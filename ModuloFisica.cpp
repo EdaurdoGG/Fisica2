@@ -102,22 +102,24 @@ int main()
 	cout << "Bienvenido al Modulo de Activasion Fisica del DEM" << endl;
 	cout << "Porfavor Identificate (Estudiante/ Docente/ Administrativo/ Apoyo)" << endl;
 	cin >> Tipo;
+	cin.ignore();
 
 	if (Tipo == "Estudiante" || Tipo == "estudiante")
 	{
 		cout << "Dame tu nombre porfavor" << endl;
-		cin >> nombre;
+		getline(cin, nombre);
 		cout << "Ingresa tu Edad" << endl;
 		cin >> edad;
 		cout << "Ingresa tu NUA" << endl;
 		cin >> NUA;
+		cin.ignore();
 		cout << "Cual es el semetre que estas cursando" << endl;
-		cin >> semestre;
+		getline(cin, semestre);
 		cout << "Cual es la carrera" << endl;
-		cin >> Carrera;
+		getline(cin, Carrera);
 
-		user1.setNombre(nombre);
-		user1.setEdad(edad);
+		est1.setNombre(nombre);
+		est1.setEdad(edad);
 		est1.setNUA(NUA);
 		est1.setSemetre(semestre);
 		est1.setCarrera(Carrera);
@@ -229,16 +231,17 @@ int main()
 	else if (Tipo == "Docente" || Tipo == "docente")
 	{
 		cout << "Dame tu nombre porfavor" << endl;
-		cin >> nombre;
+		getline(cin, nombre);
 		cout << "Ingresa tu Edad" << endl;
 		cin >> edad;
 		cout << "Ingresa tu NUE" << endl;
 		cin >> NUE;
+		cin.ignore();
 		cout << "Cual es tu titulo" << endl;
-		cin >> Titulo;
+		getline(cin, Titulo);
 
-		user1.setNombre(nombre);
-		user1.setEdad(edad);
+		Doc1.setNombre(nombre);
+		Doc1.setEdad(edad);
 		Doc1.setNUE(NUE);
 		Doc1.setTitulo(Titulo);
 
@@ -348,16 +351,17 @@ int main()
 	else if (Tipo == "Administrativo" || Tipo == "administrativo")
 	{
 		cout << "Dame tu nombre porfavor" << endl;
-		cin >> nombre;
+		getline(cin, nombre);
 		cout << "Ingresa tu Edad" << endl;
 		cin >> edad;
 		cout << "Ingresa tu NUE" << endl;
 		cin >> NUE;
+		cin.ignore();
 		cout << "Cual es la Oficcina de trabajo" << endl;
-		cin >> Oficcina;
+		getline(cin, Oficcina);
 
-		user1.setNombre(nombre);
-		user1.setEdad(edad);
+		admi1.setNombre(nombre);
+		admi1.setEdad(edad);
 		admi1.setNUE(NUE);
 		admi1.setOffice(Oficcina);
 
@@ -464,21 +468,22 @@ int main()
 
 
 
-	else if (Tipo == "Apoyo" || Tipo == "tipo")
+	else if (Tipo == "Apoyo" || Tipo == "apoyo")
 	{
 		cout << "Dame tu nombre porfavor" << endl;
-		cin >> nombre;
+		getline(cin, nombre);
 		cout << "Ingresa tu Edad" << endl;
 		cin >> edad;
 		cout << "Ingresa tu NUE" << endl;
 		cin >> NUE;
+		cin.ignore();
 		cout << "Cual tu puesto en el DEM" << endl;
-		cin >> puesto;
+		getline(cin, puesto);
 		cout << "Cuantas son las horas de trabajo al dia" << endl;
 		cin >> HorasTrabajo;
 
-		user1.setNombre(nombre);
-		user1.setEdad(edad);
+		apoyo1.setNombre(nombre);
+		apoyo1.setEdad(edad);
 		apoyo1.setNUE(NUE);
 		apoyo1.setpuesto(puesto);
 		apoyo1.setHorasTrabajo(HorasTrabajo);
