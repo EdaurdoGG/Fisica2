@@ -38,7 +38,7 @@ int main()
 	// Vriables de Visita
 	int numvisita;
 	string fecha;
-	int hora;
+	string hora;
 
 	// Variables de Evaluacion
 	int peso;
@@ -79,7 +79,6 @@ int main()
 	//Variable de control
 	string Tipo;
 	int Opcion;
-	int Control;
 
 	//Vectores
 	vector<Estudiante>DatosEst;
@@ -126,10 +125,11 @@ int main()
 		cout << "Tus datos son los siguientes\n" << endl;
 		DatosEst.push_back(est1);
 		cout << est1.getDatos();
+		cout << "\n";
 
 		cout << "Para continuar con la visita ingresa 1\n" << endl;
-		cin >> Control;
-		Control = Control + 1;
+		cin >> numvisita;
+		numvisita = numvisita + 1;
 
 		cout << "Ingresa la fecha de hoy" << endl;
 		cin >> fecha;
@@ -138,7 +138,7 @@ int main()
 		visit1.setFecha(fecha);
 		visit1.setHora(hora);
 
-		if (Control == 20)
+		if (numvisita == 20)
 		{
 			cout << "Felicidades completaste las 20 visitas" << endl;
 			cout << "Para darte una evalicion correcta ingresa lo siguinte" << endl;
@@ -242,13 +242,14 @@ int main()
 		Doc1.setNUE(NUE);
 		Doc1.setTitulo(Titulo);
 
-		cout << "Tus datos son los siguientes" << endl;
+		cout << "Tus datos son los siguientes\n" << endl;
 		DatosDoc.push_back(Doc1);
-			cout << "\n" << endl;
+		cout << Doc1.getDatosDocente();
+		cout << "\n";
 
 		cout << "Para continuar con la visita ingresa 1" << endl;
-		cin >> Control;
-		Control = Control + 1;
+		cin >> numvisita;
+		numvisita = numvisita + 1;
 
 		cout << "Ingresa la fecha de hoy" << endl;
 		cin >> fecha;
@@ -257,7 +258,7 @@ int main()
 		visit1.setFecha(fecha);
 		visit1.setHora(hora);
 
-		if (Control == 20)
+		if (numvisita == 20)
 		{
 			cout << "Felicidades completaste las 20 visitas" << endl;
 			cout << "Para darte una evalicion correcta ingresa lo siguinte" << endl;
@@ -360,12 +361,14 @@ int main()
 		admi1.setNUE(NUE);
 		admi1.setOffice(Oficcina);
 
-		cout << "Tus datos son los siguientes" << endl;
+		cout << "Tus datos son los siguientes\n" << endl;
 		DatosAdmi.push_back(admi1);
+		cout << admi1.getDatosAdmi();
+		cout << "\n";
 
 		cout << "Para continuar con la visita ingresa 1" << endl;
-		cin >> Control;
-		Control = Control + 1;
+		cin >> numvisita;
+		numvisita = numvisita + 1;
 
 		cout << "Ingresa la fecha de hoy" << endl;
 		cin >> fecha;
@@ -374,7 +377,7 @@ int main()
 		visit1.setFecha(fecha);
 		visit1.setHora(hora);
 
-		if (Control == 20)
+		if (numvisita == 20)
 		{
 			cout << "Felicidades completaste las 20 visitas" << endl;
 			cout << "Para darte una evalicion correcta ingresa lo siguinte" << endl;
@@ -482,10 +485,12 @@ int main()
 
 		cout << "Tus datos son los siguientes" << endl;
 		DatosApoyo.push_back(apoyo1);
+		cout << apoyo1.getDatosApoyo();
+		cout << "\n";
 
 		cout << "Para continuar con la visita ingresa 1" << endl;
-		cin >> Control;
-		Control = Control + 1;
+		cin >> numvisita;
+		numvisita = numvisita + 1;
 
 		cout << "Ingresa la fecha de hoy" << endl;
 		cin >> fecha;
@@ -494,7 +499,7 @@ int main()
 		visit1.setFecha(fecha);
 		visit1.setHora(hora);
 
-		if (Control == 20)
+		if (numvisita == 20)
 		{
 			cout << "Felicidades completaste las 20 visitas" << endl;
 			cout << "Para darte una evalicion correcta ingresa lo siguinte" << endl;
@@ -578,9 +583,10 @@ int main()
 			}
 		}
 	}
-
-	cout << "Usuario no identificado" << endl;
-
+	else
+	{
+		cout << "Usuario no identificado" << endl;
+	}
 
     return 0;
 }

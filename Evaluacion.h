@@ -23,9 +23,9 @@ namespace Evaluation
 		void setRitmoCardiaco(int _ritmocardiaco);
 		void setPresiónarterial(int _presiónarterial);
 
-		int setPeso();
-		int setAltura();
-		int setRitmoCardiaco();
-		int setPresiónarterial();
+		int getPeso();
+		int getAltura();
+		int getRitmoCardiaco();
+		int getPresiónarterial();
 	};
 };

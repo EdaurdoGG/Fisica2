@@ -5,7 +5,7 @@
 using namespace std;
 using namespace Visit;
 
-Visita::Visita(int _numvisita, string _fecha, int _hora)
+Visita::Visita(int _numvisita, string _fecha, string _hora)
 	:numvisita{_numvisita}, fecha{_fecha}, hora{_hora}
 {
 
@@ -25,7 +25,7 @@ void Visita::setFecha(string _fecha)
 {
 	fecha = _fecha;
 }
-void Visita::setHora(int _hora)
+void Visita::setHora(string _hora)
 {
 	hora = _hora;
 }
@@ -38,7 +38,7 @@ string Visita::getFecha()
 {
 	return fecha;
 }
-int Visita::getHora()
+string Visita::getHora()
 {
 	return hora;
 }

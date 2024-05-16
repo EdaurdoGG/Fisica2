@@ -33,19 +33,19 @@ void Evaluacion::setPresiónarterial(int _presiónarterial)
 	presiónarterial = _presiónarterial;
 }
 
-int Evaluacion::setPeso()
+int Evaluacion::getPeso()
 {
 	return peso;
 }
-int Evaluacion::setAltura()
+int Evaluacion::getAltura()
 {
 	return altura;
 }
-int Evaluacion::setRitmoCardiaco()
+int Evaluacion::getRitmoCardiaco()
 {
 	return ritmocardiaco;
 }
-int Evaluacion::setPresiónarterial()
+int Evaluacion::getPresiónarterial()
 {
 	return presiónarterial;
 }
